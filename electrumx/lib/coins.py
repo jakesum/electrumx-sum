@@ -3313,9 +3313,9 @@ class Beyondcoin(ScryptMixin, Coin):
     WIF_BYTE = bytes.fromhex("b0")
     GENESIS_HASH = ('0a9e3b5fce3aee6e04f06dfd6ad380a6'
                     'c0f9d8420f53a4ca97845756ee5d56e7')
-    TX_COUNT = 27583427
+    TX_COUNT = 26049
     TX_COUNT_HEIGHT = 25000
-    TX_PER_BLOCK = 20
+    TX_PER_BLOCK = 2
     REORG_LIMIT = 2000
     RPC_PORT = 10332
     PEERS = []
