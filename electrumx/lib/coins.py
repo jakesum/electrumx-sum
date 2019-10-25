@@ -3300,3 +3300,43 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RPC_PORT = 36442
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
+
+# Source: https://github.com/beyondcoin-project/beyondcoin
+class Beyondcoin(ScryptMixin, Coin):
+    NAME = "Beyondcoin"
+    SHORTNAME = "BYND"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("ff88b21e")
+    XPRV_VERBYTES = bytes.fromhex("ff88ade4")
+    P2PKH_VERBYTE = bytes.fromhex("19")
+    P2SH_VERBYTES = [bytes.fromhex("19"), bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("b0")
+    GENESIS_HASH = ('0a9e3b5fce3aee6e04f06dfd6ad380a6'
+                    'c0f9d8420f53a4ca97845756ee5d56e7')
+    TX_COUNT = 27583427
+    TX_COUNT_HEIGHT = 25000
+    TX_PER_BLOCK = 20
+    REORG_LIMIT = 2000
+    RPC_PORT = 10332
+    PEERS = []
+
+
+class BeyondcoinTestnet(Beyondcoin):
+    SHORTNAME = "TBYND"
+    NET = "testnet"
+    P2PKH_VERBYTE = bytes.fromhex("55")
+    P2SH_VERBYTES = [bytes.fromhex("3a")]
+    WIF_BYTE = bytes.fromhex("ef")
+    GENESIS_HASH = ('e4c23a189582c0a7719569717bfeb59b'
+                    '478a20367c5b36dd6fb18b7df4ecab51')
+    RPC_PORT = 14332
+    PEERS = []
+
+
+class BeyondcoinRegtest(BeyondcoinTestnet):
+    NET = "regtest"
+    GENESIS_HASH = ('e4d3c5acff29b5a4c03a2f78f8f9a5c2'
+                    'f077e886a99205a0c3c1515ff414f529')
+    RPC_PORT = 11332
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
