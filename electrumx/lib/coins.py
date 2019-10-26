@@ -3313,6 +3313,7 @@ class Beyondcoin(ScryptMixin, Coin):
     WIF_BYTE = bytes.fromhex("b0")
     GENESIS_HASH = ('0a9e3b5fce3aee6e04f06dfd6ad380a6'
                     'c0f9d8420f53a4ca97845756ee5d56e7')
+    DESERIALIZER = lib_tx.DeserializerSegWit
     TX_COUNT = 26049
     TX_COUNT_HEIGHT = 25000
     TX_PER_BLOCK = 2
