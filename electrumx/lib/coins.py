@@ -3317,7 +3317,7 @@ class Beyondcoin(ScryptMixin, Coin):
     TX_COUNT = 26049
     TX_COUNT_HEIGHT = 25000
     TX_PER_BLOCK = 2
-    REORG_LIMIT = 2000
+    REORG_LIMIT = 800
     RPC_PORT = 10332
     PEERS = []
 
