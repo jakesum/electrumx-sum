@@ -3302,7 +3302,7 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RELAY_FEE = 0.01
 
 # Source: https://github.com/beyondcoin-project/beyondcoin
-class Beyondcoin(ScryptMixin, Coin):
+class Beyondcoin(Coin):
     NAME = "Beyondcoin"
     SHORTNAME = "BYND"
     NET = "mainnet"
