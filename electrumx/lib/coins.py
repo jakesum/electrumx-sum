@@ -3341,3 +3341,44 @@ class BeyondcoinRegtest(BeyondcoinTestnet):
     RPC_PORT = 11332
     TX_COUNT = 1
     TX_COUNT_HEIGHT = 1
+
+# Source: https://github.com/sumcoinlabs/sumcoin
+class Sumcoin(Coin):
+    NAME = "Sumcoin"
+    SHORTNAME = "SUM"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b41c")
+    XPRV_VERBYTES = bytes.fromhex("0488abe6")
+    P2PKH_VERBYTE = bytes.fromhex("3f")
+    P2SH_VERBYTES = [bytes.fromhex("c8"), bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("bf")
+    GENESIS_HASH = ('37d4696c5072cd012f3b7c651e5ce56a'
+                    '1383577e4edacc2d289ec9b25eebfd5e')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 100
+    TX_COUNT_HEIGHT = 78177
+    TX_PER_BLOCK = 2
+    REORG_LIMIT = 800
+    RPC_PORT = 3332
+    PEERS = []
+
+
+class SumcoinTestnet(Sumcoin):
+    SHORTNAME = "TSUM"
+    NET = "testnet"
+    P2PKH_VERBYTE = bytes.fromhex("7d")
+    P2SH_VERBYTES = [bytes.fromhex("c4")]
+    WIF_BYTE = bytes.fromhex("fd")
+    GENESIS_HASH = ('8f4af36aa0bdb9ae5a34d191bcbd8074'
+                    '8569e4ef2e47587f0a3f5749dde17eea')
+    RPC_PORT = 13332
+    PEERS = []
+
+
+class SumcoinRegtest(SumcoinTestnet):
+    NET = "regtest"
+    GENESIS_HASH = ('19decb2815da5a7779c72af78fe6268c'
+                    '2a76ec94e940503a6c3ffafb282ef397')
+    RPC_PORT = 19444
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
