@@ -3,9 +3,9 @@
 .. image:: https://coveralls.io/repos/github/kyuupichan/electrumx/badge.svg
     :target: https://coveralls.io/github/kyuupichan/electrumx
 
-===============================================
-ElectrumX - Reimplementation of electrum-server
-===============================================
+===========================================================
+ElectrumX - Reimplementation of electrum-server for Sumcoin
+===========================================================
 
 For a future network with bigger blocks.
 
