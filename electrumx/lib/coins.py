@@ -3360,7 +3360,11 @@ class Sumcoin(Coin):
     TX_PER_BLOCK = 2
     REORG_LIMIT = 800
     RPC_PORT = 3332
-    PEERS = []
+    PEER_DEFAULT_PORTS = {'t': '53332', 's': '53333'}
+    PEERS = [
+        'e1.electrum-bynd.com s t',
+        'e2.electrum-bynd.com s t',
+    ]
 
 
 class SumcoinTestnet(Sumcoin):
@@ -3372,7 +3376,11 @@ class SumcoinTestnet(Sumcoin):
     GENESIS_HASH = ('8f4af36aa0bdb9ae5a34d191bcbd8074'
                     '8569e4ef2e47587f0a3f5749dde17eea')
     RPC_PORT = 13332
-    PEERS = []
+    PEER_DEFAULT_PORTS = {'t': '54332', 's': '54333'}
+    PEERS = [
+        'e1-test.electrum-bynd.com s t',
+        'e2-test.electrum-bynd.com s t',
+    ]
 
 
 class SumcoinRegtest(SumcoinTestnet):
