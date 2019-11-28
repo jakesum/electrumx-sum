@@ -3362,8 +3362,8 @@ class Sumcoin(Coin):
     RPC_PORT = 3332
     PEER_DEFAULT_PORTS = {'t': '53332', 's': '53333'}
     PEERS = [
-        'e1.electrum-bynd.com s t',
-        'e2.electrum-bynd.com s t',
+        'e1-sum.electrum-bynd.com s t',
+        'e2-sum.electrum-bynd.com s t',
     ]
 
 
