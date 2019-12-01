@@ -3364,6 +3364,10 @@ class Sumcoin(Coin):
     PEERS = [
         'e1-sum.electrum-bynd.com s t',
         'e2-sum.electrum-bynd.com s t',
+        'sum.electrum-bynd.com s t',
+        'sum1.electrum-bynd.com s t',
+        #'18.189.211.58 s t',
+        #'34.202.120.145 s t',
     ]
 
 
