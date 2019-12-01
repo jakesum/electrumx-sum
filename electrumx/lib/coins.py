@@ -3366,8 +3366,6 @@ class Sumcoin(Coin):
         'e2-sum.electrum-bynd.com s t',
         'sum.electrum-bynd.com s t',
         'sum1.electrum-bynd.com s t',
-        '18.189.211.58 s t',
-        '34.202.120.145 s t',
         '209.97.130.23 s t',
         '139.59.79.68 s t',
     ]
