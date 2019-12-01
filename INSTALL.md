@@ -69,8 +69,8 @@ DB_ENGINE=rocksdb
 
 SSL_CERTFILE=/etc/electrumx/server.crt
 SSL_KEYFILE=/etc/electrumx/server.key
-#TCP_PORT=50001
-#SSL_PORT=50002
+#TCP_PORT=53332
+#SSL_PORT=53333
 # Listen on all interfaces:
 #HOST=
 ```
