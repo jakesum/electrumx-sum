@@ -41,6 +41,8 @@ Generating TLS certificates
 INFO:    electrumx has been installed successfully. Edit /etc/electrumx.conf to configure it....
 ```
 
+* You are now done with the Installer.   'cd' to root 
+
 ## Step 3 - Configure ElectrumX for Sumcoin
 Edit the ElectrumX configuration file:  
 ```
