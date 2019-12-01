@@ -58,7 +58,7 @@ NET = mainnet
 
 # REQUIRED
 DB_DIRECTORY = /db
-# Bitcoin Node RPC Credentials
+# Sumcoin Node RPC Credentials
 DAEMON_URL = http://<RPCUSER>:<RPCPASSWORD>@localhost:3332/
 
 
