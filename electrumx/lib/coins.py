@@ -3368,6 +3368,7 @@ class Sumcoin(Coin):
         'sum1.electrum-bynd.com s t',
         '209.97.130.23 s t',
         '139.59.79.68 s t',
+        '159.65.72.249 s t'
     ]
 
 
