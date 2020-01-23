@@ -18,7 +18,7 @@ cd electrumx-installer
 Now run the script to install ElectrumX with Sumcoin:   
 
 ```
-sudo bash ./install.sh --electrumx-git-url https://github.com/Tech1k/electrumx-sum.git
+sudo bash ./install.sh --electrumx-git-url https://github.com/jakesum/electrumx-sum.git
 ```
 
 * Let the script install all required dependencies and install ElectrumX (this takes about 2-5 minutes).
